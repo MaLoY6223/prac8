@@ -1,0 +1,22 @@
+@color_green: rgb(0, 255, 0);
+
+.flex(@direction, @justify, @items, @wrap)
+{
+    display: flex;
+    flex-direction: @direction;
+    justify-content:@justify;
+    align-items: @items;
+    flex-wrap: @wrap;
+}
+
+body {
+    background: @color_green;
+    div{
+        .flex(row, space-between, center, nowrap);
+        border: 2px solid white;
+    }
+    p{
+        color: white;
+        font-size: 3rem;
+    }
+  }
